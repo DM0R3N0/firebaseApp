@@ -6,16 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/txtNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Digite seu nome"
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpload"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/padrao" />
 
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="118dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="111dp"
+        android:text="Baixar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
 </androidx.constraintlayout.widget.ConstraintLayout>
